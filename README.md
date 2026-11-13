@@ -1,6 +1,17 @@
-# 渡轮 - 抖音解析 (Dulun v1.5 自研魔改版)
+<p align="center">
+  <img src="icon/new-icon.png" width="112" alt="Dulun v1.5">
+</p>
 
-一个基于 Manifest V3 的抖音网页解析下载扩展：**暗黑极简 UI**、**无水印**解析视频、图文与实况动图，点一下按钮就能把内容落到本地。
+<h1 align="center">渡轮 - 抖音解析 (Dulun v1.5 自研魔改版)</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.5-8b5cf6?style=flat-square" alt="version">
+  <img src="https://img.shields.io/badge/manifest-v3-111111?style=flat-square" alt="manifest">
+  <img src="https://img.shields.io/badge/%E4%B8%8A%E6%9E%B6-Chrome%20%7C%20Edge-3b82f6?style=flat-square" alt="platform">
+  <img src="https://img.shields.io/badge/license-仅供学习-red?style=flat-square" alt="license">
+</p>
+
+<p align="center">一个基于 Manifest V3 的抖音网页解析下载扩展：<b>暗黑极简 UI</b>、<b>无水印</b>解析视频、图文与实况动图，点一下按钮就能把内容落到本地。</p>
 
 > 本改版基于 JKP-Video-Downloader 2.3.1 二次开发，解析层重构、UI 全套替换。仅限个人学习与备份使用。
 
