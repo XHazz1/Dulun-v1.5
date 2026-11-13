@@ -1,0 +1,31 @@
+# ---- 依赖与构建产物 ----
+node_modules/
+dist/
+build/
+*.map
+
+# ---- 打包与发布产物（Release 附件单独上传，不入库）----
+*.zip
+*.7z
+*.rar
+
+# ---- 日志与临时文件 ----
+*.log
+*.tmp
+*.bak
+*.orig
+
+# ---- 备份目录 ----
+_orig_backup/
+*_backup*/
+
+# ---- 浏览器自动生成的 DNR 编译缓存（根目录下划线开头会致加载失败，必须忽略）----
+_metadata/
+_metadata*/
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,85 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "渡轮 - 抖音解析",
+  "description": "__MSG_manifest_description__",
+  "version": "1.5",
+  "icons": {
+    "16": "icon/new-icon.png",
+    "32": "icon/new-icon.png",
+    "48": "icon/new-icon.png",
+    "128": "icon/new-icon.png",
+    "256": "icon/new-icon.png"
+  },
+  "default_locale": "zh_CN",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://*.douyin.com/*",
+    "https://*.douyinvod.com/*",
+    "https://*.snssdk.com/*",
+    "https://*.douyinpic.com/*",
+    "https://*.amemv.com/*",
+    "https://*.douyinstatic.com/*",
+    "https://*.iesdouyin.com/*",
+    "https://*.ixigua.com/*",
+    "https://*.toutiao.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "douyin-media-referer-ua",
+        "enabled": true,
+        "path": "rules/dnr-rules.json"
+      }
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://*.douyin.com/*"
+      ],
+      "resources": [
+        "*.svg",
+        "fetcher.js",
+        "*.js.map",
+        "icon/new-icon.png"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon/new-icon.png",
+      "32": "icon/new-icon.png",
+      "48": "icon/new-icon.png",
+      "128": "icon/new-icon.png",
+      "256": "icon/new-icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.douyin.com/*"
+      ],
+      "css": [
+        "content-scripts/content.css"
+      ],
+      "js": [
+        "content-scripts/ui-effects.js",
+        "content-scripts/content.js",
+        "content-scripts/jkp_extra.js"
+      ]
+    }
+  ]
+}
